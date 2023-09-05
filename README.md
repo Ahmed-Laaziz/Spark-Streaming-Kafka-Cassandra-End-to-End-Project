@@ -12,7 +12,6 @@
   <a href="#features">Features</a> •
   <a href="#how-to">How To</a> •
   <a href="#technologies">Technologies</a> •
-  <a href="#acknowledgments">Acknowledgments</a> •
   <a href="#contact">Contact</a>
 </p>
 
@@ -46,22 +45,22 @@ To run this project, you'll need the following technologies:
    - Kafka: `bin/kafka-server-start.sh config/server.properties`
 
 2. Create a Kafka topic:
-- bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic mytopic 
+- `bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic mytopic` 
 
 3. Start a Kafka producer to send data:
-- bin/kafka-console-producer.sh --broker-list localhost:9092 --topic mytopic
+- `bin/kafka-console-producer.sh --broker-list localhost:9092 --topic mytopic`
 
 4. Start a Kafka consumer to receive data:
-- bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic mytopic --from-beginning
+- `bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic mytopic --from-beginning`
 
 5. Start Spark:
-- sbin/start-all.sh
+- `sbin/start-all.sh`
 
 6. Start Cassandra:
-- bin/cassandra -f
+- `bin/cassandra -f`
 
 7. Create a Cassandra keyspace and table:
-
+`
 CREATE KEYSPACE sparkdata WITH REPLICATION = {'class':'SimpleStrategy','replication_factor':1};
 USE sparkdata;
 CREATE TABLE cust_data (
@@ -71,13 +70,13 @@ CREATE TABLE cust_data (
   product TEXT,
   cnt COUNTER,
   PRIMARY KEY (fname, lname, url, product)
-);
+);`
 
 
 ### Spark Kafka Cassandra Streaming Code
 
 Start the Spark Shell with the following command:
-- bin/spark-shell --packages "com.datastax.spark:spark-cassandra-connector_2.11:2.0.2","org.apache.spark:spark-streaming-kafka-0-8_2.11:2.0.0"
+- `bin/spark-shell --packages "com.datastax.spark:spark-cassandra-connector_2.11:2.0.2","org.apache.spark:spark-streaming-kafka-0-8_2.11:2.0.0`
 
 - Run your Spark Streaming code within the Spark Shell.
 
@@ -86,8 +85,6 @@ Start the Spark Shell with the following command:
 - Apache Kafka
 - Apache Cassandra
 
-### Acknowledgments
-We would like to express our gratitude to our mentor, Professor [Mentor Name], for their invaluable guidance and support throughout this project.
 
 ### Contact
 For further details and inquiries about the project, please contact:
