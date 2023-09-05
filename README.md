@@ -16,7 +16,7 @@
 </p>
 
 ## Demo
-- Add a link to your demo video here.
+- <a href="https://www.linkedin.com/posts/ahmed-laaziz-4b2168218_bigdata-realtimeanalysis-ecommerce-activity-7059561875897810944-2kmx?utm_source=share&utm_medium=member_desktop">video demonstration</a>
 
 ## Overview
 The "Analyzing Real-time User Sentiments during E-commerce Website Navigation" project is a real-time analytics solution designed to gain insights into user sentiments as they navigate through an e-commerce website. By monitoring and analyzing user interactions, this project helps e-commerce businesses make data-driven decisions to enhance user experience and drive sales.
