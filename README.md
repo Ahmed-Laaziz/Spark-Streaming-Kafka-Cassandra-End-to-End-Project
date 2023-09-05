@@ -1,7 +1,7 @@
 <h1 align="center">Analyzing Real-time User Sentiments during E-commerce Website Navigation 📊</h1>
 
 <p align="center">
-  <img src="your-image-url-here" alt="Project Screenshot" />
+  <img src="https://ibb.co/DKjvyqj" alt="Project Screenshot" />
 </p>
 
 <p align="center">🛒 Explore real-time user sentiments and insights during e-commerce website navigation!</p>
